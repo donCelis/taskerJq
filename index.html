@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Lista de tareas</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/estilos.min.css" />
+  </head>
+  <body>
+    <section class="contenedor">
+      <header>
+        <div class="iconM">
+          <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100.8">
+            <path
+              d="M33,5.4H15c-5.5,0-10,4.5-10,10v18c0,5.5,4.5,10,10,10h18c5.5,0,10-4.5,10-10v-18C43,9.9,38.5,5.4,33,5.4z M39,33.4
+				c0,3.3-2.7,6-6,6H15c-3.3,0-6-2.7-6-6v-18c0-3.3,2.7-6,6-6h18c3.3,0,6,2.7,6,6V33.4z M85,5.4H67c-5.5,0-10,4.5-10,10v18
+				c0,5.5,4.5,10,10,10h18c5.5,0,10-4.5,10-10v-18C95,9.9,90.5,5.4,85,5.4z M91,33.4c0,3.3-2.7,6-6,6H67c-3.3,0-6-2.7-6-6v-18
+				c0-3.3,2.7-6,6-6h18c3.3,0,6,2.7,6,6V33.4z M33,57.4H15c-5.5,0-10,4.5-10,10v18c0,5.5,4.5,10,10,10h18c5.5,0,10-4.5,10-10v-18
+				C43,61.9,38.5,57.4,33,57.4z M39,85.4c0,3.3-2.7,6-6,6H15c-3.3,0-6-2.7-6-6v-18c0-3.3,2.7-6,6-6h18c3.3,0,6,2.7,6,6V85.4z M85,57.4
+				H67c-5.5,0-10,4.5-10,10v18c0,5.5,4.5,10,10,10h18c5.5,0,10-4.5,10-10v-18C95,61.9,90.5,57.4,85,57.4z M91,85.4c0,3.3-2.7,6-6,6H67
+				c-3.3,0-6-2.7-6-6v-18c0-3.3,2.7-6,6-6h18c3.3,0,6,2.7,6,6V85.4z"
+            />
+          </svg>
+        </div>
+        <h2  class="animate">Tareas</h2>
+      </header>
+      <section class="inserForm">
+        <form action="" class="sesionIn">
+          <div>
+            <input id="usuario" type="email" placeholder="Correo" />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <input id="contra" type="password" placeholder="Contraseña" />
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="iniSesion">
+            <input type="submit" value="Iniciar Sesión" />
+          </div>
+        </form>
+      </section>
+      <section class="sesionAc">
+        <section class="enTareas">
+          <form id="formulario">
+            <div>
+              <input id="entrada" type="text" placeholder="Ingresar tarea" />
+            </div>
+          </form>
+        </section>
+        <section class="tareas"></section>
+        <footer>
+          <div>
+            <i class="iconAdd fas fa-plus"></i>
+          </div>
+        </footer>
+      </section>
+    </section>
+
+    <!-- Jquery 3.4.1 -->
+    <script defer src="js/jquery-3.4.1.min.js"></script>
+    <!-- FireBase -->
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"
+    ></script>
+
+    <!-- Mi script -->
+    <script defer src="js/tareas.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Condicionales en Js</title>
+</head>
+<body>
+   <script>
+      let persona1 = {
+         nombre: 'Danny',
+         apellido: 'Celis',
+         edad: 16
+      }
+
+      let persona2 = {
+         nombre: 'Alex',
+         apellido: 'Bayona',
+         edad: 25
+      }
+
+      const EDAD = 18
+
+      const edadAdecuada = ({edad}) => edad >= EDAD ;
+
+      function mayorDeEdad(datos){
+         if (edadAdecuada) {
+            console.log(datos.nombre+' es mayor de edad');
+         } else {
+            console.log(datos.nombre+' es menor de edad');
+         }
+      }
+
+      mayorDeEdad(persona1);
+      mayorDeEdad(persona2);
+   </script>
+</body>
+</html>
